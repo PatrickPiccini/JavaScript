@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula06</title>
+    <style>
+        body{
+            background-color: royalblue;
+            color: sandybrown;
+            font: normal 25pt Arial; /* Comentario em CSS*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Aula 06</h1> <!-- Comentario em HTML-->
+    
+    <script>
+        var n1 = window.prompt('Digite um numero: ') // string
+        var n2 = window.prompt('Digite outro numero: ') // string
+        var soma = Number.parseFloat(n1) + Number.parseFloat(n1) //transforma em number os valores
+        window.alert('A soma dos valores é '+ soma.toString()) //concatenação
+
+        var n3 = Number(window.prompt('Digite um numero: ')) 
+        var n4 = Number(window.prompt('Digite outro numero: ')) 
+        var soma2 = n3 + n4
+        window.alert(`A soma entre ${n3} e ${n4} é igual a ${soma2}`) // tamplate string
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+        /*
+        formas de transformar numeros em string:
+        String(n) ou n.toString()
+        */
+       var s = window.prompt('Digite uma string: ')
+       
+       
+       
+       window.alert(s.length +' numero de letras / ' + s.toUpperCase() +" maiuscula / " + s.toLowerCase() + ' minuscula ')
+
+    </script>
+</body>
+</html>
