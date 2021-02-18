@@ -21,13 +21,13 @@
 
     <script>
         function verificar(){
-            var inpt = (document.getElementById("txti"))
+            var inpt = document.getElementById("txti").value
             var res = document.getElementById("resposta")
-            res.innerHTML = inpt
+            
             if(inpt == 'brasil'){
-                res.innerHTML += `<p>Voce é <strong>Brasileiro</strong></p>`
+                res.innerHTML =`<p>Voce é <strong>Brasileiro</strong></p>`
             }else{
-                res.innerHTML += "<p>Voce é <strong>Estrangeiro</strong></p>"
+                res.innerHTML = "<p>Voce é <strong>Estrangeiro</strong></p>"
             }
         }
     </script>
